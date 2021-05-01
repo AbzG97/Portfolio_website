@@ -45,16 +45,19 @@ function Sidebar() {
 }
 
 const Styledsidebar = styled.div`
+    z-index: 1;
     background-color: #1b1b1b;
     width: 25%;
-    min-height: 100%;
+    height: 100%;
     position: fixed;
-    /* border-top-right-radius: 100%;
-    border-bottom-right-radius: 100%; */
+    top: 0;
+    bottom: 0;
+    left: 0;
     letter-spacing: 3px;
+    border-right: 5px solid white;
     hr {
         background-color: white;
-        width: 85%;
+        width: 100%;
         height: 3px;
         border-radius: 50px;
     }
@@ -106,6 +109,7 @@ const Styledsidebar = styled.div`
         color: white;
         display: flex;
         flex-direction: column;
+        padding: .5rem .5rem 0 1rem;
         p {
             width: 65%;
             margin: .5rem 0rem .5rem 0rem;
