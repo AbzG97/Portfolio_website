@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'; 
 import robot from '../robot.svg';
-import signature from '../signature.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faAt} from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin,   } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import {Link} from 'react-router-dom'
 
 
 function Sidebar() {
@@ -22,11 +22,11 @@ function Sidebar() {
             </div>
             <hr/>
             <div className="list">
-                <p>Home</p>
-                <p>Skills</p>
-                <p>My work</p>
-                <p>Resume</p>
-                <p>Contact me</p>
+                <Link to="/"><p>Home</p></Link>
+                <Link to="/skills"><p>Skills</p></Link>
+                <Link to="/work"><p>My work</p></Link>
+                <Link to="/resume"><p>Resume</p></Link>
+                <Link to="/contact"><p>Contact me</p> </Link>
             </div>
             <hr/>
             <div className="contact-info">

@@ -26,10 +26,12 @@ const StyledHomeSection = styled.div`
     /* background-color: violet; */
     color: white;
     letter-spacing: 3px;
-    margin-left: 30%;
+    margin-left: 35%;
     margin-top: 10%;
     width: 60%;
     font-weight: lighter;
+    
+    
     .intro {
         padding: 1rem;
         display: flex;
@@ -38,14 +40,17 @@ const StyledHomeSection = styled.div`
         justify-content:center;
         .title {
             padding: 0rem 0rem 4rem 0rem;
+            
             #name {
                 font-size: 2.5rem;
                 padding: 0rem 0rem 1rem 0rem;
+                animation: slideFromBottom 1s ease-out;
                 span {
                     color: lightgreen;
                 }
             }
             #desc {
+                animation: slideFromBottom 1.2s ease-out;
                 font-size: 1.5rem;
                 span {
                     color: violet;
@@ -53,16 +58,19 @@ const StyledHomeSection = styled.div`
             }
         }
         .aboutMe {
+            animation: slideFromBottom 1.5s ease-out;
             padding: 0rem 0rem 4rem 0;
             font-size: 1.25rem;
         }
         .buttons {
+            animation: slideFromBottom 2s ease-out;
             width: 100%;
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: space-evenly;
             button {
+                letter-spacing: 2px;
                 width: 15%;
                 height: 10%;
                 padding: .75rem;
@@ -82,7 +90,19 @@ const StyledHomeSection = styled.div`
             }
 
         }
+            @keyframes slideFromBottom {
+            0% {
+                transform: translateY(50%);
+                opacity: 0;
+
+            }
+            100% {
+                transform: translateY(0%);
+                opacity: 1;
+            }
+        }
     }
+   
 `;
 
 export default HomeSection;
