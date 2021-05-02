@@ -2,6 +2,7 @@ import Sidebar from "./components/Sidebar";
 import Home from "./pages/Home";
 import {Switch, Route} from 'react-router-dom'
 import SkillsPage from "./pages/SkillsPage";
+import ResumePage from "./pages/ResumePage";
 
 
 function App() {
@@ -15,6 +16,10 @@ function App() {
 
         <Route path="/skills">
           <SkillsPage/>
+        </Route>
+
+        <Route path="/resume">
+          <ResumePage/>
         </Route>
       </Switch>
     
