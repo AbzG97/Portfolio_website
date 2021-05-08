@@ -9,12 +9,13 @@ const ResumeData = () => {
         qualifications: [
             "Core Java and Java enterprise edition",
             "Software design fundamentals (SDLC, wireframing)",
-            "ExpressJS and NodeJS frameworks for setting up web servers",
-            "HTML, CSS, bootstrap framework",
-            "Databases: MySQL and MongoDB.",
+            "ExpressJS and Node for setting up web servers",
+            "HTML, CSS",
+            "Javascript",
+            "ReactJS",
+            "Databases: SQL and MongoDB.",
             "Customer service",
-            "Collaboration and teamwork",
-            "ReactJS framework"
+            "Collaboration and teamwork",           
         ], 
         education: [
             {

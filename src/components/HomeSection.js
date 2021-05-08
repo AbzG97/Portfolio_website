@@ -10,10 +10,10 @@ function HomeSection() {
                     <p id="desc">A current programming student and <span>aspiring</span> web developer</p>
                 </div>
                 <div className="aboutMe">
-                    <p>Currently working as a Supply Technician in the Canadian Armed Forces reserves, while attending Sheridan college for an advanced diploma in Computer Systems - System Analyst.
-                         I am skilled in computer programming languages such as Java and JavaScript. I spend my time learning about web development,
-                          and technologies like Node.js, MongoDB, and JSON APIs in my free time to get better at developing web apps, 
-                          since it's a field I want to get into and hopefully be able to intern for it soon.</p>
+                    <p>Hi thank you for checking out my portfolio, my name's Abdulla and here are some things about me, i am currently attending Sherinda college in Ontario, Canada
+                        studying Computer systems technologies, and working in the Canadian Army reserves. I like spending my time playing videogames, cooking and learning about
+                        new web technologies like Node, MongoDB, REST APIs, Javascript and ReactJS. Feel free to check out my projects and resume, and feel free to get in touch.
+                    </p>
                 </div>
             </div>
         </StyledHomeSection>

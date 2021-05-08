@@ -4,7 +4,7 @@ import styled from 'styled-components'
 function BackendSkillsSection() {
     const [backendSkills, setBackendSkills] = useState([
         "NodeJs", "ExpressJs", "REST APIs", "JSON Web Tokens", "Authentication", "Postman",
-        "MongoDB", "Mongoose ODM", "JSON APIs"
+        "MongoDB", "Mongoose ODM", "JSON"
     ]);
 
     return (
