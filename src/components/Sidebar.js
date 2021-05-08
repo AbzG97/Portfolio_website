@@ -9,6 +9,7 @@ import {Link} from 'react-router-dom'
 
 function Sidebar() {
     return (
+        
         <Styledsidebar>
             <div className="title">
                 <img src={robot} alt="robot"/>
@@ -26,7 +27,7 @@ function Sidebar() {
                 <Link to="/skills"><p>Skills</p></Link>
                 <Link to="/work"><p>My work</p></Link>
                 <Link to="/resume"><p>Resume</p></Link>
-                <Link to="/contact"><p>Contact me</p> </Link>
+                {/* <Link to="/contact"><p>Contact me</p> </Link> */}
             </div>
             <hr/>
             <div className="contact-info">
@@ -75,7 +76,7 @@ const Styledsidebar = styled.div`
             #signature {
                 stroke-dasharray: 4219;
                 stroke-dashoffset: 4219;
-                animation: sign 6s infinite;
+                animation: sign 6s;
                 animation-fill-mode: forwards;
                 @keyframes sign {
                     to {
@@ -113,7 +114,7 @@ const Styledsidebar = styled.div`
         p {
             width: 65%;
             margin: .5rem 0rem .5rem 0rem;
-            padding: .5rem 0rem .5rem 2rem;
+            padding: .75rem 0rem .75rem 2rem;
             cursor: pointer;
             transition: all 0.5s ease-in-out;
             border-radius: 50px;
@@ -133,6 +134,7 @@ const Styledsidebar = styled.div`
         justify-content: center;
         .icons {
             /* background-color: violet; */
+            padding-top: 1rem;
             width: 100%;
             display: flex;
             flex-direction: row;
@@ -145,6 +147,10 @@ const Styledsidebar = styled.div`
                 border-radius: 50px;
             }
         }
+    }
+    .selected {
+        background-color: white;
+        color: black;
     }
 
 `;

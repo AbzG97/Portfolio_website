@@ -31,7 +31,6 @@ const ResumeQualificationStyle = styled.div`
 
     }
     .qualifications {
-        /* background-color: yellow; */
         display: grid;
         grid-template-columns: 25% 25% 25%;
         grid-template-rows: auto;
@@ -41,10 +40,6 @@ const ResumeQualificationStyle = styled.div`
             font-size: 1rem;
             letter-spacing: 2px;
             list-style: none;
-            /* background-color: white; */
-            /* padding: 1rem; */
-            /* text-align:center;
-            border-radius: 50px; */
         }
     }
 `;

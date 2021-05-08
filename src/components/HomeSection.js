@@ -10,8 +10,10 @@ function HomeSection() {
                     <p id="desc">A current programming student and <span>aspiring</span> web developer</p>
                 </div>
                 <div className="aboutMe">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis dicta laudantium nostrum, 
-                        fuga iure maiores architecto doloremque vel, exercitationem tempora praesentium labore ad molestiae eum, autem nisi voluptatibus quis laboriosam?</p>
+                    <p>Currently working as a Supply Technician in the Canadian Armed Forces reserves, while attending Sheridan college for an advanced diploma in Computer Systems - System Analyst.
+                         I am skilled in computer programming languages such as Java and JavaScript. I spend my time learning about web development,
+                          and technologies like Node.js, MongoDB, and JSON APIs in my free time to get better at developing web apps, 
+                          since it's a field I want to get into and hopefully be able to intern for it soon.</p>
                 </div>
                 <div className="buttons">
                     <button>My skills</button>

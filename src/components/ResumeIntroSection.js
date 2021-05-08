@@ -9,7 +9,7 @@ function ResumeIntroSection({resumeData}) {
         <IntroSectionStyle>
             <p className="name">{resumeData.intro.name}</p>
             <div>
-                <a href={resumeData.intro.email}><FontAwesomeIcon icon={faAt} size="2x" /> </a>
+                <a href={`mailto:${resumeData.intro.email}`}><FontAwesomeIcon icon={faAt} size="2x" /> </a>
                 <a href={resumeData.intro.linkedin}><FontAwesomeIcon icon={faLinkedin} size="2x"/> </a>
                 <a href={resumeData.intro.github}><FontAwesomeIcon icon={faGithub} size="2x"/> </a>
             </div>
