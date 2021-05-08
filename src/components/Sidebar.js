@@ -25,7 +25,7 @@ function Sidebar() {
             <div className="list">
                 <Link to="/"><p>Home</p></Link>
                 <Link to="/skills"><p>Skills</p></Link>
-                <Link to="/work"><p>My work</p></Link>
+                <Link to="/projects"><p>My work</p></Link>
                 <Link to="/resume"><p>Resume</p></Link>
                 {/* <Link to="/contact"><p>Contact me</p> </Link> */}
             </div>

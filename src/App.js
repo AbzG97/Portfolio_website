@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import {Switch, Route} from 'react-router-dom'
 import SkillsPage from "./pages/SkillsPage";
 import ResumePage from "./pages/ResumePage";
+import Projects from "./pages/Projects";
 
 
 function App() {
@@ -20,6 +21,10 @@ function App() {
 
         <Route path="/resume">
           <ResumePage/>
+        </Route>
+
+        <Route path="/projects">
+          <Projects/>
         </Route>
       </Switch>
     

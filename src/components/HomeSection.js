@@ -15,10 +15,6 @@ function HomeSection() {
                           and technologies like Node.js, MongoDB, and JSON APIs in my free time to get better at developing web apps, 
                           since it's a field I want to get into and hopefully be able to intern for it soon.</p>
                 </div>
-                <div className="buttons">
-                    <button>My skills</button>
-                    <button>Projects</button>
-                </div>
             </div>
         </StyledHomeSection>
     )
@@ -64,34 +60,7 @@ const StyledHomeSection = styled.div`
             padding: 0rem 0rem 4rem 0;
             font-size: 1.25rem;
         }
-        .buttons {
-            animation: slideFromBottom 2s ease-out;
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-evenly;
-            button {
-                letter-spacing: 2px;
-                width: 15%;
-                height: 10%;
-                padding: .75rem;
-                font-size: 1rem;
-                cursor: pointer;
-                background-color: transparent;
-                outline: none;
-                border: 3px solid lightgreen;
-                color: white;
-                border-radius: 50px;
-                transition: all 0.25s ease-in-out;
-                &:hover {
-                    color: black;
-                    background-color: white;
-                    border: none;
-                }
-            }
-
-        }
+        
             @keyframes slideFromBottom {
             0% {
                 transform: translateY(50%);
