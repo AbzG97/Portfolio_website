@@ -1,7 +1,7 @@
 const ResumeData = () => {
     return {
         intro: {
-            name: "Abdulla Ghazalah Ghazalah",
+            name: "Abdulla Ghazalah",
             email: "Abdulla.Ghazalah@hotmail.com",
             linkedin: "https://www.linkedin.com/in/abdulla-ghazalah/",
             github: "https://github.com/AbzG97"
