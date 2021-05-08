@@ -7,7 +7,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import {Link} from 'react-router-dom'
 
 
-function Sidebar() {
+function Sidebar({resumeData}) {
     return (
         
         <Styledsidebar>
@@ -35,9 +35,9 @@ function Sidebar() {
                     <h3>Get in touch with me</h3>
                 </div> */}
                 <div className="icons">
-                    <FontAwesomeIcon className="icon" icon={faGithub} size="2x" inverse/>
-                    <FontAwesomeIcon className="icon" icon={faLinkedin} size="2x" inverse/>
-                    <FontAwesomeIcon className="icon" icon={faAt} size="2x" inverse/>
+                    <a href={`mailto:${resumeData.intro.email}`}><FontAwesomeIcon icon={faAt} size="2x" /> </a>
+                    <a href={resumeData.intro.linkedin}><FontAwesomeIcon icon={faLinkedin} size="2x"/> </a>
+                    <a href={resumeData.intro.github}><FontAwesomeIcon icon={faGithub} size="2x"/> </a>
                 </div>
                
             </div>

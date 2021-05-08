@@ -23,7 +23,7 @@ function Project({project}) {
               <div className="links">
                   
                     <a href={project.github_rep}><button>Github link</button></a>
-                    <a href={project.github_rep}><button>Open app</button></a>
+                    <a href={project.website_link}><button>Open app</button></a>
                   
               </div>
             
@@ -57,15 +57,16 @@ const StyledProject = styled.div`
     }
     .techList {
         /* background-color: yellow; */
+        width: 100%;
         display: flex;
         flex-direction: row;
-        padding: 0.5rem;
+        /* padding: 0.5rem; */
         p {
             background-color: lightgreen;
             margin: 0rem 1rem 0rem 1rem;
-            padding: .35em;
+            padding: .25em;
             border-radius: 50px;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             color: black;
             font-weight: bolder;
             
@@ -80,7 +81,7 @@ const StyledProject = styled.div`
         }
     }
     .links {
-        padding: .5rem;
+        padding: .85rem;
         width: 100%;
         display: flex;    
         align-items: center;

@@ -1,13 +1,13 @@
 import React, {useState} from 'react'
-import data from '../ResumeData'
-import styled from "styled-components"
-import ResumeIntroSection from '../components/ResumeIntroSection';
-import ResumeQualificationSection from '../components/ResumeQualificationSection';
-import EducationSection from '../components/EducationSection';
-import ExperienceSection from '../components/ExperienceSection';
 
-function ResumePage() {
-    const [resumeData, setResumeData] = useState(data());
+import styled from "styled-components"
+import ResumeIntroSection from '../components/resume/ResumeIntroSection';
+import ResumeQualificationSection from '../components/resume/ResumeQualificationSection';
+import EducationSection from '../components/resume/EducationSection';
+import ExperienceSection from '../components/resume/ExperienceSection';
+
+function ResumePage({resumeData}) {
+    
     return (
         <ResumePageStyle>
             <ResumeIntroSection resumeData={resumeData}/>

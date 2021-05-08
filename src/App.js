@@ -1,15 +1,19 @@
+import react, {useState} from 'react'
 import Sidebar from "./components/Sidebar";
 import Home from "./pages/Home";
 import {Switch, Route} from 'react-router-dom'
 import SkillsPage from "./pages/SkillsPage";
 import ResumePage from "./pages/ResumePage";
 import Projects from "./pages/Projects";
+import data from './ResumeData'
 
 
 function App() {
+  const [resumeData, setResumeData] = useState(data());
+
   return (
     <div className="App">
-      <Sidebar/>
+      <Sidebar resumeData={resumeData} />
       <Switch>
         <Route path="/" exact>
           <Home/>
@@ -20,7 +24,7 @@ function App() {
         </Route>
 
         <Route path="/resume">
-          <ResumePage/>
+          <ResumePage resumeData={resumeData}/>
         </Route>
 
         <Route path="/projects">

@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import data from '../ProjectData'
 import styled from "styled-components"
-import Project from '../components/Project';
+import Project from '../components/projects/Project';
 
 function Projects() {
     const [projects, setProjects] = useState(data());

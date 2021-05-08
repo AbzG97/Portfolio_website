@@ -14,10 +14,11 @@ const ProjectData = () => {
                 "ReactJS",
                 "React styled components",
                 "CSS",
-                "OpenWeatherMap API"
+                "OpenWeatherMap API",
+                "Axios"
             ],
-            github_rep: "https://github.com/AbzG97/Portfolio_website.git",
-            website_link: ""
+            github_rep: "https://github.com/AbzG97/React_weather_app",
+            website_link: "https://clouds-weather-app.herokuapp.com/"
         },
         {
             name: "Shopify front-end dev internship challenge",
@@ -32,10 +33,11 @@ const ProjectData = () => {
                 "ReactJS",
                 "React styled components",
                 "CSS",
-                "OMDB API"
+                "OMDB API",
+                "Axios"
             ],
-            github_rep: "placeholder",
-            website_link: "placeholder"
+            github_rep: "https://github.com/AbzG97/Shopify_dev_challenge",
+            website_link: "https://the-shoppies-dev-challenge.herokuapp.com/"
         }
     ]
 }
