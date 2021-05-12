@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import styled from 'styled-components'
+import { v4 as uuidv4 } from 'uuid';
 
 function FrontendSkillsSection() {
     const [frontendSkills, setFrontSkills] = useState([
@@ -13,7 +14,7 @@ function FrontendSkillsSection() {
                 <p className="desc">Some of the technologies that I <span>learnt</span> and <span>use</span> to design the look of my projects </p>
                 <div className="skills">
                     {frontendSkills.map((skill) => (
-                        <p>{skill}</p>
+                        <p key={uuidv4()}>{skill}</p>
                     ))}
                 </div>
                
@@ -25,15 +26,9 @@ function FrontendSkillsSection() {
 
 const StyledFrontendSection = styled.div`
     /* background-color: white; */
-    width: 60%;
-    margin-left: 30%;
-    margin-top: 1%;
-    color: white;
-    letter-spacing: 2px;
-    font-weight: lighter;
     .frontendSkills {
         .title {
-            font-size: 3.5rem;
+            font-size: 2.5rem;
             padding-bottom: 1rem;
             animation: slideFromBottom 2.85s ease-out;
             span {
@@ -51,7 +46,7 @@ const StyledFrontendSection = styled.div`
         }
         .skills {
             display: grid;
-            grid-template-columns: 20% 20% 20% 20%;
+            grid-template-columns: 25% 25% 25% 25%;
             grid-gap: 15px;
             /* background-color: violet; */
             padding: 0.5rem;
@@ -72,6 +67,21 @@ const StyledFrontendSection = styled.div`
                 }
             }
         }
+    
+    @media (max-width: 770px){
+    .skills{
+            grid-template-columns: 33% 33% 33%;
+            grid-template-rows: auto;
+            
+        } 
+    }
+    @media (max-width: 379px){
+        .skills{
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto;
+
+        } 
+    }
         @keyframes slideFromBottom {
             0% {
                 transform: translateY(50%);
@@ -84,6 +94,7 @@ const StyledFrontendSection = styled.div`
             }
         }
     }
+   
 
 `;
 

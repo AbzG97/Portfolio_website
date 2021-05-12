@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
+import { v4 as uuidv4 } from 'uuid';
 
 function EducationSection({resumeData}) {
     return (
@@ -7,14 +8,14 @@ function EducationSection({resumeData}) {
             <p className="sectionTitle">Education</p>
             <div className="schoolList">
                 {resumeData.education.map((school) => (
-                    <div className="school">
+                    <div key={uuidv4()} className="school">
                         <p className="diploma">{school.diploma} /</p>
                         <p>{school.school}, {school.location}</p>
+                        <ul>
                         {school.highlights.map((element) => (
-                            <ul>
-                                <li>{element}</li>
-                            </ul>
+                            <li>{element}</li>  
                         ))}
+                        </ul>
                     </div> 
                 ))}
 

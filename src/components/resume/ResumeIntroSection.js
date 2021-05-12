@@ -8,7 +8,7 @@ function ResumeIntroSection({resumeData}) {
     return (
         <IntroSectionStyle>
             <p className="name">{resumeData.intro.name}</p>
-            <div>
+            <div className="icons"> 
                 <a href={`mailto:${resumeData.intro.email}`}><FontAwesomeIcon icon={faAt} size="2x" /> </a>
                 <a href={resumeData.intro.linkedin}><FontAwesomeIcon icon={faLinkedin} size="2x"/> </a>
                 <a href={resumeData.intro.github}><FontAwesomeIcon icon={faGithub} size="2x"/> </a>
@@ -31,7 +31,7 @@ const IntroSectionStyle = styled.div`
 
     }
     
-    div {
+    .icons{
         width: 7%;
         /* background-color: violet; */
         display: flex;
@@ -62,6 +62,13 @@ const IntroSectionStyle = styled.div`
             }
         }
 
+    }
+    @media (max-width: 365px) {
+        .icons {
+            align-items: center;
+            padding-left: 1rem;
+        }
+        
     }
 
 

@@ -23,15 +23,10 @@ function HomeSection() {
 const StyledHomeSection = styled.div`
     /* background-color: violet; */
     color: white;
-    letter-spacing: 3px;
-    margin-left: 35%;
-    margin-top: 10%;
-    width: 60%;
     font-weight: lighter;
-    
-    
+    letter-spacing: 3px;
     .intro {
-        padding: 1rem;
+        /* padding: 1rem; */
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -71,6 +66,23 @@ const StyledHomeSection = styled.div`
                 transform: translateY(0%);
                 opacity: 1;
             }
+        }
+    }
+     /* for tablets */
+     @media (min-width: 768px) {
+    }
+    /* for phones */
+    @media (max-width: 600px) {
+        .intro > .title {
+             #name {
+                font-size: 1.5rem;
+            }
+            #desc {
+                font-size: 1rem;
+            }
+        }
+        .intro > .aboutMe > p {
+            font-size: 1rem;
         }
     }
    

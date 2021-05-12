@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { v4 as uuidv4 } from 'uuid';
 
 function Project({project}) {
     return (
@@ -10,13 +11,13 @@ function Project({project}) {
 
               <ul className="featuresList">
                   {project.features.map((feature) => (
-                  <li>{feature}</li>
+                  <li key={uuidv4()}>{feature}</li>
               ))}
               </ul>
 
               <div className="techList">
                   {project.technologies.map((tech) => (
-                  <p>{tech}</p>
+                  <p key={uuidv4()}>{tech}</p>
               ))}
               </div>
              
@@ -58,17 +59,21 @@ const StyledProject = styled.div`
     .techList {
         /* background-color: yellow; */
         width: 100%;
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+        align-items: center;
+        margin: 1rem;
         /* padding: 0.5rem; */
+        grid-gap: 25px;
         p {
             background-color: lightgreen;
-            margin: 0rem 1rem 0rem 1rem;
-            padding: .25em;
-            border-radius: 50px;
+            margin: 1rem;
+            padding: 1rem;
+            border-radius: 25px;
             letter-spacing: 1px;
             color: black;
             font-weight: bolder;
+            width: 75%;
             
         }
     }
@@ -103,6 +108,17 @@ const StyledProject = styled.div`
                     color: black;
                 }
             }
+        }
+    }
+    @media (min-width: 768px){
+        .techList {
+            grid-template-columns: 33% 33% 33%;
+        }   
+    }
+    @media (max-width: 600px){
+        .techList {
+            grid-template-columns: 50% 50%;
+            margin: 0;
         }
     }
 `

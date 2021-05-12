@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import styled from 'styled-components'
+import { v4 as uuidv4 } from 'uuid';
 
 function BackendSkillsSection() {
     const [backendSkills, setBackendSkills] = useState([
@@ -14,7 +15,7 @@ function BackendSkillsSection() {
                 <p className="desc">Some of the technologies that I <span>learnt</span> and <span>use</span> on my side projects</p>
                 <div className="skills">
                     {backendSkills.map((skill) => (
-                        <p>{skill}</p>
+                        <p key={uuidv4()}>{skill}</p>
                     ))}
                 </div>
                
@@ -26,15 +27,9 @@ function BackendSkillsSection() {
 
 const StyledBackendSection = styled.div`
     /* background-color: white; */
-    width: 60%;
-    margin-left: 30%;
-    margin-top: 2%;
-    color: white;
-    letter-spacing: 2px;
-    font-weight: lighter;
     .backendSkills {
         .title {
-            font-size: 3.5rem;
+            font-size: 2.5rem;
             padding-bottom: 1rem;
             animation: slideFromBottom 1s ease-out;
             span {
@@ -52,7 +47,8 @@ const StyledBackendSection = styled.div`
         }
         .skills {
             display: grid;
-            grid-template-columns: 20% 20% 20% 20%;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: auto;
             grid-gap: 15px;
             /* background-color: violet; */
             padding: 0.5rem;
@@ -73,6 +69,20 @@ const StyledBackendSection = styled.div`
                 }
             }
         }
+        @media (max-width: 770px){
+            .skills{
+                grid-template-columns: 33% 33% 33%;
+                grid-template-rows: auto;
+            }
+        }   
+
+        @media (max-width: 379px){
+            .skills{
+                grid-template-columns: 50% 50%;
+                grid-template-rows: auto;
+            } 
+        }
+        
         @keyframes slideFromBottom {
             0% {
                 transform: translateY(50%);
@@ -85,6 +95,7 @@ const StyledBackendSection = styled.div`
             }
         }
     }
+    
 
 `;
 

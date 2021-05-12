@@ -38,6 +38,30 @@ const ProjectData = () => {
             ],
             github_rep: "https://github.com/AbzG97/Shopify_dev_challenge",
             website_link: "https://the-shoppies-dev-challenge.herokuapp.com/"
+        },
+        {
+            name: "Sign up / Login Authentication System",
+            description: "a simple app where users can sign up / login edit their account data, view their data, delete their account and logout using JWT saved in cookies to perform these tasks",
+            features: [
+                "Sign up / Login",
+                "Validation for emails and passwords",
+                "Users can read, update, and delete their profile data",
+                "user authentication using JWT",
+                "A database system where where data is requested and sent"
+            ],
+            technologies: [
+                "Javascript",
+                "NodeJS",
+                "ExpressJS",
+                "Atlas MongoDB",
+                "JWT",
+                "Cookies",
+                "Handlebars template engine",
+                "HTML / CSS"
+            ],
+            github_rep: "https://github.com/AbzG97/basic-signup-login-system.git",
+            website_link: "https://basic-auth-system.herokuapp.com/"
+            
         }
     ]
 }
