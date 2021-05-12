@@ -26,7 +26,7 @@ function Sidebar({resumeData}) {
                 <div className="list">
                     <Link to="/"><p>Home</p></Link>
                     <Link to="/skills"><p>Skills</p></Link>
-                    <Link to="/projects"><p>My work</p></Link>
+                    <Link to="/projects"><p>Projects</p></Link>
                     <Link to="/resume"><p>Resume</p></Link>
                     {/* <Link to="/contact"><p>Contact me</p> </Link> */}
                 </div>
@@ -111,7 +111,7 @@ const Styledsidebar = styled.div`
         color: white;
         display: flex;
         flex-direction: column;
-        padding: .5rem .5rem 0 1rem;
+        padding: .5rem .5rem 0rem 1rem;
         p {
             width: 65%;
             margin: .5rem 0rem .5rem 0rem;
@@ -154,11 +154,10 @@ const Styledsidebar = styled.div`
         color: black;
     }
     @media (max-width: 768px) {
-            margin: 1rem;
             position: fixed;
-            bottom: 0;
+            top: 0;
             width: 100%;
-            height: 10%;
+            height: 7%;
             hr {
                 display: none;
             }
@@ -170,16 +169,16 @@ const Styledsidebar = styled.div`
             }
             .list {
                 flex-direction: row;
-                width: 85%;
                 align-items: center;
-                justify-content: center;
-                /* margin: 0rem .5rem 0rem .5rem; */
-        
-                p{
+                justify-content: space-evenly;
+                margin: .5rem;
+                font-size: .6rem;
+                padding: 0rem .5rem 0rem .5rem;
+                p {
                     text-align: center;
-                    /* margin: .5rem; */
-                    padding: 1rem; 
-                }
+                    margin: .5rem;
+                    padding: 1rem;
+                } 
             }
             
         }

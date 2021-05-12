@@ -63,7 +63,7 @@ const IntroSectionStyle = styled.div`
         }
 
     }
-    @media (max-width: 365px) {
+    @media (max-width: 600px) {
         .icons {
             align-items: center;
             padding-left: 1rem;
