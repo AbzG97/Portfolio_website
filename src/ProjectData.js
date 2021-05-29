@@ -62,6 +62,34 @@ const ProjectData = () => {
             github_rep: "https://github.com/AbzG97/basic-signup-login-system.git",
             website_link: "https://basic-auth-system.herokuapp.com/"
             
+        },
+        {
+            name: "Moments",
+            description: "a simple forum system where users can make posts, while seeing and commenting on other users posts",
+            features: [
+                "Sign up / Login system using Google's Firebase platform",
+                "User authentication and authorization with Firebase",
+                "Create posts",
+                "A user profile system where users can see, edit, and delete their own posts",
+                "Profile edit and delete options",
+                "Dashboard page where all posts made by users can viewed, and commented on",
+            ],
+            technologies: [
+                "Javascript",
+                "NodeJS",
+                "ExpressJS",
+                "Atlas MongoDB",
+                "ReactJS",
+                "React styled components",
+                "React router",
+                "bootstrap",
+                "Google Firebase Platform",
+                "RESTful API for posts",
+                "Axios"
+            ],
+            github_rep: "https://github.com/AbzG97/Moment_forum_post_system",
+            website_link: "https://moment-posts.herokuapp.com"
+            
         }
     ]
 }

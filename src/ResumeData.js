@@ -8,12 +8,16 @@ const ResumeData = () => {
         },
         qualifications: [
             "Core Java and Java enterprise edition",
-            "Software design fundamentals (SDLC, wireframing)",
+            "Software design fundamentals (SDLC, Agile)",
+            "UX fundamentals (Wireframing, User stories)",
+            "UML",
             "ExpressJS and Node for setting up web servers",
             "HTML, CSS",
             "Javascript",
             "ReactJS",
-            "Databases: SQL and MongoDB.",
+            "Git and Github",
+            "Databases: SQL and NoSQL database systems like MongoDB",
+            "RESTful APIs",
             "Customer service",
             "Collaboration and teamwork",           
         ], 
@@ -23,7 +27,7 @@ const ResumeData = () => {
                 location: "Brampton, Ontario",
                 diploma: "Advanced Diploma in Computer Systems Technology – Information Systems Engineering",
                 highlights: [
-                    "Java programming that focuses on core programming principles, and developing web applications with MySQL database support",
+                    "Java programming that focuses on core programming principles like Object Oreinted Programming, and developing web applications with MySQL database support",
                     "Building front-end web applications using JavaScript Frameworks",
                     "IT computer networking courses that focuses on cabling standards, IPs, routing and switching protocols",
                     "Linux OS knowledge like File management, account creation, storage and disk management"
