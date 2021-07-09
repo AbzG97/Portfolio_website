@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 function BackendSkillsSection() {
     const [backendSkills, setBackendSkills] = useState([
         "NodeJs", "ExpressJs", "REST APIs", "JSON Web Tokens", "Authentication", "Postman",
-        "MongoDB", "Mongoose ODM", "JSON"
+        "MongoDB", "Mongoose ODM", "JSON", "Socket.IO",
     ]);
 
     return (

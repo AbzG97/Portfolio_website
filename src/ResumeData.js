@@ -19,7 +19,9 @@ const ResumeData = () => {
             "Databases: SQL and NoSQL database systems like MongoDB",
             "RESTful APIs",
             "Customer service",
-            "Collaboration and teamwork",           
+            "Collaboration and teamwork",
+            "Jest testing framework",
+            "Integration Testing Jest / supertest"         
         ], 
         education: [
             {

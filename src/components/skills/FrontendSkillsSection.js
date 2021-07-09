@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 function FrontendSkillsSection() {
     const [frontendSkills, setFrontSkills] = useState([
-        "HTML", "CSS", "SCSS", "React", "React styled components", "Javascript"
+        "HTML", "CSS", "SCSS", "React", "React styled components", "Javascript", "React Router"
     ]);
 
     return (
