@@ -25,16 +25,11 @@ function Sidebar({resumeData}) {
                 <hr/>
                 <div className="list">
                     <Link to="/"><p>Home</p></Link>
-                    <Link to="/skills"><p>Skills</p></Link>
                     <Link to="/projects"><p>Projects</p></Link>
                     <Link to="/resume"><p>Resume</p></Link>
-                    {/* <Link to="/contact"><p>Contact me</p> </Link> */}
                 </div>
                 <hr/>
                 <div className="contact-info">
-                    {/* <div>
-                        <h3>Get in touch with me</h3>
-                    </div> */}
                     <div className="icons">
                         <a href={`mailto:${resumeData.intro.email}`}><FontAwesomeIcon icon={faAt} size="2x" /> </a>
                         <a href={resumeData.intro.linkedin}><FontAwesomeIcon icon={faLinkedin} size="2x"/> </a>
@@ -111,7 +106,7 @@ const Styledsidebar = styled.div`
         color: white;
         display: flex;
         flex-direction: column;
-        padding: .5rem .5rem 0rem 1rem;
+        padding: 1rem .5rem 1rem 2rem;
         p {
             width: 65%;
             margin: .5rem 0rem .5rem 0rem;
@@ -127,7 +122,7 @@ const Styledsidebar = styled.div`
     }
     .contact-info {
         padding: .25rem;
-        margin-top: 1rem;
+        margin-top: 3rem;
         /* background-color: white; */
         display: flex;
         flex-direction: column;
@@ -139,7 +134,7 @@ const Styledsidebar = styled.div`
             width: 100%;
             display: flex;
             flex-direction: row;
-            align-items: center;
+            align-items: flex-end;
             justify-content: space-evenly;
             cursor: pointer;
             .icon {
